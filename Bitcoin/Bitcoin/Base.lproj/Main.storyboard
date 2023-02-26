@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIn-lH-TZm">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Icon-->
+        <scene sceneID="WTI-f3-qRW">
+            <objects>
+                <viewController storyboardIdentifier="IconSettingsViewController" id="vsD-uk-JQc" customClass="IconSettingsViewController" customModule="Bitcoin" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5kw-cu-4he">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-Uy-JQd">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemGray6Color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YKd-j7-hVq"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="YKd-j7-hVq" firstAttribute="trailing" secondItem="JDW-Uy-JQd" secondAttribute="trailing" id="Ic6-a7-26p"/>
+                            <constraint firstItem="JDW-Uy-JQd" firstAttribute="top" secondItem="YKd-j7-hVq" secondAttribute="top" id="Zwm-OL-43M"/>
+                            <constraint firstItem="YKd-j7-hVq" firstAttribute="bottom" secondItem="JDW-Uy-JQd" secondAttribute="bottom" id="iO2-3d-dKt"/>
+                            <constraint firstItem="JDW-Uy-JQd" firstAttribute="leading" secondItem="YKd-j7-hVq" secondAttribute="leading" id="zN6-ow-fwg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Settings" image="gearshape.fill" id="V5M-5F-Nhx"/>
+                    <navigationItem key="navigationItem" title="Icon" largeTitleDisplayMode="never" id="30X-4y-bsp"/>
+                    <connections>
+                        <outlet property="tableView" destination="JDW-Uy-JQd" id="MUw-TI-xMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUX-ZC-eMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011" y="1201"/>
+        </scene>
+        <!--Assets-->
+        <scene sceneID="VZb-US-PCy">
+            <objects>
+                <tableViewController id="Wyf-4d-JY9" customClass="AssetsViewController" customModule="Bitcoin" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="XN5-vc-pS2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Wyf-4d-JY9" id="v7k-Ye-jIA"/>
+                            <outlet property="delegate" destination="Wyf-4d-JY9" id="zEs-8k-9AR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Assets" largeTitleDisplayMode="always" id="Mdx-dd-BVf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eps-GL-N2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-464"/>
+        </scene>
+        <!--Asset Detail View Controller-->
+        <scene sceneID="xca-5w-r9i">
+            <objects>
+                <tableViewController storyboardIdentifier="AssetDetailViewController" id="CEN-nr-Rzr" customClass="AssetDetailViewController" customModule="Bitcoin" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="tvy-yw-PWD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="CEN-nr-Rzr" id="ynN-F6-ZnO"/>
+                            <outlet property="delegate" destination="CEN-nr-Rzr" id="kp5-OQ-488"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Tdg-ds-WNZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCg-2S-reg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-464"/>
+        </scene>
+        <!--Assets-->
+        <scene sceneID="XJ8-Qc-4rb">
+            <objects>
+                <navigationController id="shA-Ro-WyZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assets" image="bitcoinsign.circle.fill" id="bGo-bs-7lF"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRz-4r-Mlj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wyf-4d-JY9" kind="relationship" relationship="rootViewController" id="raF-v0-Z2u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gQ-5T-9fk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-750" y="-464"/>
+        </scene>
+        <!--Watchlist-->
+        <scene sceneID="Yn7-Pq-5M6">
+            <objects>
+                <tableViewController storyboardIdentifier="WatchListViewController" id="sA9-9F-jld" customClass="WatchListViewController" customModule="Bitcoin" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="wjq-vY-TNL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="sA9-9F-jld" id="QLi-Jv-GzJ"/>
+                            <outlet property="delegate" destination="sA9-9F-jld" id="sWK-CX-5U6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Watchlist" largeTitleDisplayMode="always" id="clP-kv-tKS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0x-nG-ICZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="390"/>
+        </scene>
+        <!--Watchlist-->
+        <scene sceneID="HEB-Y7-gRb">
+            <objects>
+                <navigationController id="Fnq-Pb-o4I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Watchlist" image="heart.fill" id="0KA-1K-nSh"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hky-km-ec1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sA9-9F-jld" kind="relationship" relationship="rootViewController" id="2jt-0d-J3I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkG-8E-ebV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-750" y="390"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="mvX-Gr-oMD">
+            <objects>
+                <tableViewController id="MgE-XL-XNb" customClass="SettingsViewController" customModule="Bitcoin" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="1kR-fm-ohy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <sections>
+                            <tableViewSection id="mwa-PZ-Btl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="IconCell" id="dOa-qs-lAN">
+                                        <rect key="frame" x="0.0" y="18" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dOa-qs-lAN" id="Xdi-eb-6mA">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bp7-8L-hGg">
+                                                    <rect key="frame" x="20" y="11" width="334.66666666666669" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bp7-8L-hGg" firstAttribute="leading" secondItem="Xdi-eb-6mA" secondAttribute="leadingMargin" id="3hq-qD-4eu"/>
+                                                <constraint firstItem="bp7-8L-hGg" firstAttribute="top" secondItem="Xdi-eb-6mA" secondAttribute="topMargin" id="FV3-uS-6a0"/>
+                                                <constraint firstItem="bp7-8L-hGg" firstAttribute="trailing" secondItem="Xdi-eb-6mA" secondAttribute="trailingMargin" id="OiW-3o-ghB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vsD-uk-JQc" kind="show" id="SBd-2R-mIA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="MgE-XL-XNb" id="rYf-Zo-LXe"/>
+                            <outlet property="delegate" destination="MgE-XL-XNb" id="j3r-A5-fJ5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" largeTitleDisplayMode="always" id="9b7-Ik-wik"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEc-6d-Y3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="1201"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="sMJ-NZ-zUH">
+            <objects>
+                <navigationController title="Settings" id="e1Y-oV-CNk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" id="Mva-pi-eSd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OUZ-g9-UL9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HGc-r9-aJR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="MgE-XL-XNb" kind="relationship" relationship="rootViewController" id="g8H-Bj-RLn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwM-aV-nq9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-750" y="1201"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NLE-6P-uiY">
+            <objects>
+                <tabBarController id="PIn-lH-TZm" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6oA-5b-Vgv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="shA-Ro-WyZ" kind="relationship" relationship="viewControllers" id="Pe1-f0-1A2"/>
+                        <segue destination="Fnq-Pb-o4I" kind="relationship" relationship="viewControllers" id="bZ3-dD-yYS"/>
+                        <segue destination="e1Y-oV-CNk" kind="relationship" relationship="viewControllers" id="cmL-Q1-hHS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNR-59-2KG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2847" y="-406"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoinsign.circle.fill" width="28" height="28"/>
+        <image name="gearshape.fill" width="28" height="28"/>
+        <image name="heart.fill" width="28" height="28"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
